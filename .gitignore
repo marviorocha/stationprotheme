@@ -12,7 +12,7 @@ wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 /src/README.md
 /src/.sass-cache
-/src/.yarn.lock
+/src/yarn.lock
 /.htaccess
 /license.txt
 /readme.html
