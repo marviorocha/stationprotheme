@@ -1,6 +1,17 @@
 # Station Pro - Theme  
 
-## Theme for your Radio
+![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
+
+### Theme Station Pro for Radio 
+
+This is a free theme for Wordpress where we use with Station Pro Plugin, Icecast or shutcast.
+
+
+# Screenshot
+
+![](https://raw.githubusercontent.com/marviorocha/stationprotheme/master/screenshot.png)
+
+
 
 ## Copyright and License ##
 
