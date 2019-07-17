@@ -9,7 +9,7 @@ This is a free theme for Wordpress where we use with Station Pro Plugin, Icecast
 
 # Screenshot
 
-![](https://raw.githubusercontent.com/marviorocha/stationproradio/master/screenshot.png)
+![](https://github.com/marviorocha/stationprotheme/blob/master/screenshot.png)
 
 
 

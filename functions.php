@@ -60,14 +60,14 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 		/**
 		 * Add support for multiple languages.
 		 */
-		load_theme_textdomain( 'stationproradio', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'station-pro-radio', get_template_directory() . '/languages' );
 
 		/**
 		 * Register nav menus.
 		 */
 		register_nav_menus(
 			array(
-				'main-menu' => __( 'Main Menu', 'stationproradio' )
+				'main-menu' => __( 'Main Menu', 'station-pro-radio' )
 			)
 		);
 
@@ -171,7 +171,7 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 		/*
 		 * Enable support for custom logo.
 		 *
-		 *  @since stationproradio 2.2.10
+		 *  @since station-pro-radio 2.2.10
 		 */
 		add_theme_support( 'custom-logo', array(
 			'height'      => 240,
@@ -196,9 +196,9 @@ add_action( 'after_setup_theme', 'odin_setup_features' );
 function odin_widgets_init() {
 	register_sidebar(
 		array(
-			'name' => __( 'Main Sidebar', 'stationproradio' ),
+			'name' => __( 'Main Sidebar', 'station-pro-radio' ),
 			'id' => 'main-sidebar',
-			'description' => __( 'Site Main Sidebar', 'stationproradio' ),
+			'description' => __( 'Site Main Sidebar', 'station-pro-radio' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s nav nav-pills nav-stacked"> ',
 			'after_widget' => '</aside>',
 			'before_title' => '<h4 class="widgettitle widget-title">',
@@ -215,9 +215,9 @@ function odin_footer_widgets_init(){
 register_sidebar(array(
 
  
-		'name' => __( 'Footer', 'stationproradio' ),
+		'name' => __( 'Footer', 'station-pro-radio' ),
 		'id' => 'footer-sidebar',
-		'description' => __( 'Sidebar Footer', 'stationproradio' ),
+		'description' => __( 'Sidebar Footer', 'station-pro-radio' ),
 		'before_widget' => '<div  id="%1$s" class="col-md-4 widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle widget-title">',
@@ -254,6 +254,7 @@ function odin_enqueue_scripts() {
 
 	// Loads Odin main stylesheet.
 	wp_enqueue_style( 'odin-style', get_stylesheet_uri(), array(), null, 'all' );
+	wp_enqueue_style( 'fontawesine-cdn', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), null, 'all' );
 
 	// jQuery.
 	wp_enqueue_script( 'jquery' );

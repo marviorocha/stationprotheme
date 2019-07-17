@@ -23,13 +23,13 @@ get_header(); ?>
 					<div class="entry-content entry-attachment">
 						<?php echo wp_audio_shortcode( array( 'src' => wp_get_attachment_url() ) ); ?>
 
-						<p><strong><?php _e( 'URL:', 'stationproradio' ); ?></strong> <a href="<?php echo esc_url( wp_get_attachment_url() ); ?>" title="<?php the_title_attribute(); ?>" rel="attachment"><span><?php echo esc_attr( basename( wp_get_attachment_url() ) ); ?></span></a></p>
+						<p><strong><?php _e( 'URL:', 'station-pro-radio' ); ?></strong> <a href="<?php echo esc_url( wp_get_attachment_url() ); ?>" title="<?php the_title_attribute(); ?>" rel="attachment"><span><?php echo esc_attr( basename( wp_get_attachment_url() ) ); ?></span></a></p>
 
 						<?php the_content(); ?>
 
 						<?php if ( ! empty( $post->post_parent ) ) : ?>
 							<ul class="pager page-title">
-								<li class="previous"><a href="<?php echo esc_url( get_permalink( $post->post_parent ) ); ?>" title="<?php echo esc_attr( sprintf( __( 'Back to %s', 'stationproradio' ), strip_tags( get_the_title( $post->post_parent ) ) ) ); ?>"><?php printf( __( '<span class="meta-nav">&larr;</span> %s', 'stationproradio' ), get_the_title( $post->post_parent ) ); ?></a></li>
+								<li class="previous"><a href="<?php echo esc_url( get_permalink( $post->post_parent ) ); ?>" title="<?php echo esc_attr( sprintf( __( 'Back to %s', 'station-pro-radio' ), strip_tags( get_the_title( $post->post_parent ) ) ) ); ?>"><?php printf( __( '<span class="meta-nav">&larr;</span> %s', 'station-pro-radio' ), get_the_title( $post->post_parent ) ); ?></a></li>
 							</ul><!-- .pager -->
 						<?php endif; ?>
 					</div><!-- .entry-content -->

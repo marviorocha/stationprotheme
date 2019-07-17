@@ -9,22 +9,22 @@
 <?php echo odin_breadcrumbs( $homepage = '' )  ?>
  
 <header class="page-header">
-	<h1 class="page-title"><?php _e( 'Nothing Found', 'stationproradio' ); ?></h1>
+	<h1 class="page-title"><?php _e( 'Nothing Found', 'station-pro-radio' ); ?></h1>
 </header>
 
 <div class="page-content">
 	<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
-		<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'stationproradio' ), admin_url( 'post-new.php' ) ); ?></p>
+		<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'station-pro-radio' ), admin_url( 'post-new.php' ) ); ?></p>
 
 	<?php elseif ( is_search() ) : ?>
 
-		<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'stationproradio' ); ?></p>
+		<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'station-pro-radio' ); ?></p>
 		<?php get_search_form(); ?>
 
 	<?php else : ?>
 
-		<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'stationproradio' ); ?></p>
+		<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'station-pro-radio' ); ?></p>
 		<?php get_search_form(); ?>
 
 	<?php endif; ?>

@@ -48,9 +48,9 @@ if ( ! dynamic_sidebar( 'footer' ) ) {  ?>
 	<footer id="footer" role="contentinfo">
 		<div class="container">
         <p><small> &copy; <?php echo date( 'Y' ); ?> <a rel="nofollow" href="<?php echo esc_url( home_url() ); ?>">
-        <?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'stationproradio' ); ?> |
+        <?php bloginfo( 'name' ); ?></a> - <?php _e( 'All rights reserved', 'station-pro-radio' ); ?> |
          <?php echo sprintf( __( 'Station Pro - Made with <i class="fa fa-heart-o"></i> by <a href="http://www.marviorocha.com" rel="nofollow" 
-         target="_blank">MarvioRocha.Com</a> powered by <a href="%s" rel="nofollow" target="_blank">WordPress</a>.', 'stationproradio' ),
+         target="_blank">MarvioRocha.Com</a> powered by <a href="%s" rel="nofollow" target="_blank">WordPress</a>.', 'station-pro-radio' ),
           'http://wpod.in/', 'http://wordpress.org/' ); ?> | Website created with
            <a rel="no-follow" href="http://www.mashup-template.com/" class="link-like-text"
             >Mashup Template</a> </small></p>    

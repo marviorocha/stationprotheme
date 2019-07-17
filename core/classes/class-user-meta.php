@@ -65,11 +65,11 @@ class Odin_User_Meta {
 			'odin-admin',
 			'odinAdminParams',
 			array(
-				'galleryTitle'  => __( 'Add images in gallery', 'stationproradio' ),
-				'galleryButton' => __( 'Add in gallery', 'stationproradio' ),
-				'galleryRemove' => __( 'Remove image', 'stationproradio' ),
-				'uploadTitle'   => __( 'Choose a file', 'stationproradio' ),
-				'uploadButton'  => __( 'Add file', 'stationproradio' ),
+				'galleryTitle'  => __( 'Add images in gallery', 'station-pro-radio' ),
+				'galleryButton' => __( 'Add in gallery', 'station-pro-radio' ),
+				'galleryRemove' => __( 'Remove image', 'station-pro-radio' ),
+				'uploadTitle'   => __( 'Choose a file', 'station-pro-radio' ),
+				'uploadButton'  => __( 'Add file', 'station-pro-radio' ),
 			)
 		);
 	}
@@ -340,7 +340,7 @@ class Odin_User_Meta {
 	 * @return string          HTML of the field.
 	 */
 	protected function field_upload( $id, $current, $attrs ) {
-		echo sprintf( '<input type="text" id="%1$s" name="%1$s" value="%2$s" class="regular-text"%4$s /> <input class="button odin-upload-button" type="button" value="%3$s" /><br />', $id, esc_url( $current ), __( 'Select file', 'stationproradio' ), $this->build_field_attributes( $attrs ) );
+		echo sprintf( '<input type="text" id="%1$s" name="%1$s" value="%2$s" class="regular-text"%4$s /> <input class="button odin-upload-button" type="button" value="%3$s" /><br />', $id, esc_url( $current ), __( 'Select file', 'station-pro-radio' ), $this->build_field_attributes( $attrs ) );
 	}
 
 	/**
@@ -363,7 +363,7 @@ class Odin_User_Meta {
 			$image = $image[0];
 		}
 
-		$html .= sprintf( '<input id="%1$s" name="%1$s" type="hidden" class="image" value="%2$s" /><img src="%3$s" class="preview" style="height: 150px; width: 150px;" alt="" /><input id="%1$s-button" class="button" type="button" value="%4$s" /><ul class="actions"><li><a href="#" class="delete" title="%5$s"><span class="dashicons dashicons-no"></span></a></li></ul>', $id, $current, $image, __( 'Select image', 'stationproradio' ), __( 'Remove image', 'stationproradio' ) );
+		$html .= sprintf( '<input id="%1$s" name="%1$s" type="hidden" class="image" value="%2$s" /><img src="%3$s" class="preview" style="height: 150px; width: 150px;" alt="" /><input id="%1$s-button" class="button" type="button" value="%4$s" /><ul class="actions"><li><a href="#" class="delete" title="%5$s"><span class="dashicons dashicons-no"></span></a></li></ul>', $id, $current, $image, __( 'Select image', 'station-pro-radio' ), __( 'Remove image', 'station-pro-radio' ) );
 
 		$html .= '<br class="clear" />';
 		$html .= '</div>';
@@ -391,7 +391,7 @@ class Odin_User_Meta {
 							$html .= sprintf( '<li class="image" data-attachment_id="%1$s">%2$s<ul class="actions"><li><a href="#" class="delete" title="%3$s"><span class="dashicons dashicons-no"></span></a></li></ul></li>',
 								$attachment_id,
 								wp_get_attachment_image( $attachment_id, 'thumbnail' ),
-								__( 'Remove image', 'stationproradio' )
+								__( 'Remove image', 'station-pro-radio' )
 							);
 						}
 					}
@@ -402,7 +402,7 @@ class Odin_User_Meta {
 			$html .= sprintf( '<input type="hidden" class="odin-gallery-field" name="%s" value="%s" />', $id, $current );
 
 			// Adds "adds images in gallery" url.
-			$html .= sprintf( '<p class="odin-gallery-add hide-if-no-js"><a href="#">%s</a></p>', __( 'Add images in gallery', 'stationproradio' ) );
+			$html .= sprintf( '<p class="odin-gallery-add hide-if-no-js"><a href="#">%s</a></p>', __( 'Add images in gallery', 'station-pro-radio' ) );
 		$html .= '</div>';
 
 		echo $html;

@@ -4,13 +4,13 @@
  *
  * The area of the page that contains comments and the comment form.
  *
- * @package stationproradio
+ * @package station-pro-radio
  * @since 1.9.0
  */
 ?>
 <section id="comments" class="content-wrap" itemscope itemtype="http://schema.org/Comment">
 	<?php if ( post_password_required() ) : ?>
-		<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view all comments.', 'stationproradio' ); ?></p>
+		<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view all comments.', 'station-pro-radio' ); ?></p>
 </section><!-- #comments -->
 		<?php
 		return;
@@ -19,15 +19,15 @@
 	if ( have_comments() ) : ?>
 		<h2 id="comments-title" class="page-header">
 			<?php
-			comments_number( __( '0 Comments', 'stationproradio' ), __( '1 Comment', 'stationproradio' ), __( '% Comments', 'stationproradio' ) );
-			echo ' ' . __( 'to', 'stationproradio' ) . ' <span>&quot;' . get_the_title() . '&quot;</span>';
+			comments_number( __( '0 Comments', 'station-pro-radio' ), __( '1 Comment', 'station-pro-radio' ), __( '% Comments', 'station-pro-radio' ) );
+			echo ' ' . __( 'to', 'station-pro-radio' ) . ' <span>&quot;' . get_the_title() . '&quot;</span>';
 			?>
 		</h2>
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 			<nav id="comment-nav-above">
 				<ul class="pager">
-					<li class="previous"><?php previous_comments_link( __( '&larr; Old Comments', 'stationproradio' ) ); ?></li>
-					<li class="next"><?php next_comments_link( __( 'New Comments &rarr;', 'stationproradio' ) ); ?></li>
+					<li class="previous"><?php previous_comments_link( __( '&larr; Old Comments', 'station-pro-radio' ) ); ?></li>
+					<li class="next"><?php next_comments_link( __( 'New Comments &rarr;', 'station-pro-radio' ) ); ?></li>
 				</ul>
 			</nav>
 		<?php endif; ?>
@@ -37,14 +37,14 @@
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 			<nav id="comment-nav-above">
 				<ul class="pager">
-					<li class="previous"><?php previous_comments_link( __( '&larr; Old Comments', 'stationproradio' ) ); ?></li>
-					<li class="next"><?php next_comments_link( __( 'New Comments &rarr;', 'stationproradio' ) ); ?></li>
+					<li class="previous"><?php previous_comments_link( __( '&larr; Old Comments', 'station-pro-radio' ) ); ?></li>
+					<li class="next"><?php next_comments_link( __( 'New Comments &rarr;', 'station-pro-radio' ) ); ?></li>
 				</ul>
 			</nav>
 		<?php endif; ?>
 	<?php endif; ?>
 	<?php if ( ! comments_open() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
-		<p class="nocomments"><?php _e( 'Comments closed.', 'stationproradio' ); ?></p>
+		<p class="nocomments"><?php _e( 'Comments closed.', 'station-pro-radio' ); ?></p>
 	<?php endif; ?>
 
 	<?php
@@ -53,14 +53,14 @@
 		$aria_req 		= ( $req ? " aria-required='true'" : '' );
 		$html_req 		= ( $req ? " required='required'" : '' );
 		$html5 			= current_theme_supports( 'html5', 'comment-form' ) ? 'html5' : null;
-		$comment_field 	= '<div class="comment-form-comment form-group"><label class="control-label" for="comment">' . __( 'Comment', 'stationproradio' ) . ' <span class="required text-danger">*</span></label> ' .
+		$comment_field 	= '<div class="comment-form-comment form-group"><label class="control-label" for="comment">' . __( 'Comment', 'station-pro-radio' ) . ' <span class="required text-danger">*</span></label> ' .
 						 '<textarea id="comment" name="comment" class="form-control" cols="45" rows="8" aria-required="true" required="required"></textarea></div>';
 		$fields 		=  array(
-			'author' => '<div class="comment-form-author form-group">' . '<label for="author">' . __( 'Name', 'stationproradio' ) . ( $req ? ' <span class="required text-danger">*</span>' : '' ) . '</label> ' .
+			'author' => '<div class="comment-form-author form-group">' . '<label for="author">' . __( 'Name', 'station-pro-radio' ) . ( $req ? ' <span class="required text-danger">*</span>' : '' ) . '</label> ' .
 			            '<input id="author" name="author" class="form-control" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . $html_req . ' /></div>',
-			'email'  => '<div class="comment-form-email form-group"><label for="email">' . __( 'E-mail', 'stationproradio' ) . ( $req ? ' <span class="required text-danger">*</span>' : '' ) . '</label> ' .
+			'email'  => '<div class="comment-form-email form-group"><label for="email">' . __( 'E-mail', 'station-pro-radio' ) . ( $req ? ' <span class="required text-danger">*</span>' : '' ) . '</label> ' .
 			            '<input id="email" name="email" class="form-control" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" aria-describedby="email-notes"' . $aria_req . $html_req  . ' /></div>',
-			'url'    => '<div class="comment-form-url form-group"><label for="url">' . __( 'Website', 'stationproradio' ) . '</label> ' .
+			'url'    => '<div class="comment-form-url form-group"><label for="url">' . __( 'Website', 'station-pro-radio' ) . '</label> ' .
 			            '<input id="url" name="url" class="form-control" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div>'
 		);
 		comment_form( array(
