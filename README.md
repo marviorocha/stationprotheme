@@ -10,7 +10,12 @@ The Station Pro theme to be suggested plugins that are installed in your WordPre
 
 Please send me your feedback,
 
-Make with :fa-heart: by Marvio Rocha (marviorocha@marviorocha.com)
+Make with :heart: by Marvio Rocha (marviorocha@marviorocha.com)
+
+
+### :warning: Warning
+
+This theme not is version hosted in wordpress.org. If you use it, please get the version hosted in wordpress website. Go you dashboard wordpress, seach this theme "Station Pro Radio" and click in install.
 
 
 # Screenshot
