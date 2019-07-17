@@ -4,7 +4,13 @@
 
 ### Theme Station Pro for Radio 
 
-This is a free theme for Wordpress where we use with Station Pro Plugin, Icecast or shoutcast radio streming.
+This is a free theme for WordPress where we use the plugin Station Pro player for streaming Icecast or Shoutcast. We improve the code the pure HTML, for best performance with SEO. 
+
+The Station Pro theme to be suggested plugins that are installed in your WordPress.
+
+Please send me your feedback,
+
+Make with :fa-heart: by Marvio Rocha (marviorocha@marviorocha.com)
 
 
 # Screenshot
