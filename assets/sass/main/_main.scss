@@ -1,0 +1,19 @@
+// Imports fonts that you will used in the application or in the template
+@import url("https://fonts.googleapis.com/css?family=La+Belle+Aurore|Fira+Sans:400,700");
+
+
+// Import all your dependencies
+@import "lib/_bootstrap";
+
+// Import the base template
+@import "lib/_template";
+
+// Import your custom SCSS
+@import "mashup-example";
+
+.widget ul {
+    list-style: none;
+    margin: 5px;
+    padding: 0px 10px 15px 0px;
+  
+}

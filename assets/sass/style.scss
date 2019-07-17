@@ -1,0 +1,17 @@
+// ==========================================================================
+// Theme Style Main
+// ==========================================================================
+
+/*!
+Theme Name: Odin
+Author URI: http://wpod.in/
+Description: Odin main stylesheet.
+Author: the Odin team
+Author URI: http://wpod.in/#colaboradores
+*/
+
+@import
+        "variables",           // Theme       Custom Variables
+        "main/main",               // Theme       Custom Layout
+        "wordpress/wordpress"
+        ;

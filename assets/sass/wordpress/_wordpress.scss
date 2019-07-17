@@ -1,0 +1,277 @@
+// ==========================================================================
+// WordPress Core Styles (Table of contents)
+// ==========================================================================
+//
+// # Alignment
+// # Content
+// # Galleries
+// # Images
+// # Widgets
+// 		## Calendar
+// 		## Search
+// 		## TagCloud
+// # Shortcodes
+// 		## Video
+// # Forms
+//
+
+// Alignment
+// ==========================================================================
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #eee;
+	clip: auto !important;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+
+.alignnone {
+    margin: 0.5em 0;
+}
+
+.alignright {
+    @extend .pull-right;
+    margin: 0.5em 0 1em 1em;
+}
+
+.alignleft {
+    @extend .pull-left;
+    margin: 0.5em 1em 1em 0;
+}
+
+.aligncenter {
+    @extend .center-block;
+    margin: 0.5em auto;
+}
+
+// Content
+// ==========================================================================
+.hentry,
+.widget {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.page-content,
+.entry-content {
+    @include clearfix;
+    table {
+        @extend .table;
+    }
+    .table-condensed {
+        @extend .table-condensed;
+    }
+}
+
+.entry-attachment {
+    .attachment {
+        @extend .text-center;
+        margin-bottom: 1em;
+    }
+    #nav-below {
+        .nav-next {
+            @extend .pull-right;
+        }
+        .nav-previous {
+            @extend .pull-left;
+        }
+    }
+}
+
+.entry-caption {
+    color: #666;
+}
+
+// Override the Twitter embed fixed width
+.twitter-tweet-rendered {
+    max-width: 100% !important;
+}
+
+// Galleries
+// ==========================================================================
+.gallery {
+    @include clearfix;
+    margin: 0 auto 1em;
+    .gallery-item {
+        @extend .pull-left;
+        @extend .text-center;
+        img {
+            @extend .img-thumbnail;
+        }
+    }
+    @for $gallery from 1 through 9 {
+        &.gallery-columns-#{$gallery} .gallery-item {
+            @if 1 == $gallery {
+                float: none;
+            }
+            @if 6 <= $gallery {
+                margin: 2em 1%;
+                width: unquote(100 / $gallery - 2 + "%");
+            }
+            @else {
+                margin: 2em 2%;
+                width: unquote(100 / $gallery - 4 + "%");
+            }
+        }
+    }
+    .gallery-caption {
+        color: $thumbnail-caption-color;
+        margin-left: 0;
+    }
+    dl {
+        margin: 0;
+    }
+    br + br {
+        display: none;
+    }
+}
+.sticky {
+    background-color:gray;
+}
+
+.bypostauthor {
+    background-color: gray;
+}
+// Images
+// ==========================================================================
+.hentry,
+.widget {
+    img {
+        height: auto;
+        max-width: 100%;
+        width: auto;
+    }
+}
+
+img {
+    &.header-image,
+    &.wp-post-image {
+        max-width: 100%;
+        height: auto;
+    }
+    &.wp-smiley, .rsswidget & {
+        border: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 0;
+    }
+    // Remove WP.com Stats smile :)
+    &#wpstats {
+        display: none;
+    }
+    .comment-content &,
+    .widget & {
+        @extend .img-responsive;
+    }
+}
+ 
