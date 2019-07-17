@@ -66,21 +66,21 @@ class Odin_Taxonomy {
 	 */
 	protected function labels() {
 		$default = array(
-			'name'                       => sprintf( __( '%ss', 'stationprotheme' ), $this->name ),
-			'singular_name'              => sprintf( __( '%s', 'stationprotheme' ), $this->name ),
-			'add_or_remove_items'        => sprintf( __( 'Add or Remove %ss', 'stationprotheme' ), $this->name ),
-			'view_item'                  => sprintf( __( 'View %s', 'stationprotheme' ), $this->name ),
-			'edit_item'                  => sprintf( __( 'Edit %s', 'stationprotheme' ), $this->name ),
-			'search_items'               => sprintf( __( 'Search %s', 'stationprotheme' ), $this->name ),
-			'update_item'                => sprintf( __( 'Update %s', 'stationprotheme' ), $this->name ),
-			'parent_item'                => sprintf( __( 'Parent %s:', 'stationprotheme' ), $this->name ),
-			'parent_item_colon'          => sprintf( __( 'Parent %s:', 'stationprotheme' ), $this->name ),
-			'menu_name'                  => sprintf( __( '%ss', 'stationprotheme' ), $this->name ),
-			'add_new_item'               => sprintf( __( 'Add New %s', 'stationprotheme' ), $this->name ),
-			'new_item_name'              => sprintf( __( 'New %s', 'stationprotheme' ), $this->name ),
-			'all_items'                  => sprintf( __( 'All %ss', 'stationprotheme' ), $this->name ),
-			'separate_items_with_commas' => sprintf( __( 'Separate %ss with comma', 'stationprotheme' ), $this->name ),
-			'choose_from_most_used'      => sprintf( __( 'Choose from %ss most used', 'stationprotheme' ), $this->name )
+			'name'                       => sprintf( __( '%ss', 'stationproradio' ), $this->name ),
+			'singular_name'              => sprintf( __( '%s', 'stationproradio' ), $this->name ),
+			'add_or_remove_items'        => sprintf( __( 'Add or Remove %ss', 'stationproradio' ), $this->name ),
+			'view_item'                  => sprintf( __( 'View %s', 'stationproradio' ), $this->name ),
+			'edit_item'                  => sprintf( __( 'Edit %s', 'stationproradio' ), $this->name ),
+			'search_items'               => sprintf( __( 'Search %s', 'stationproradio' ), $this->name ),
+			'update_item'                => sprintf( __( 'Update %s', 'stationproradio' ), $this->name ),
+			'parent_item'                => sprintf( __( 'Parent %s:', 'stationproradio' ), $this->name ),
+			'parent_item_colon'          => sprintf( __( 'Parent %s:', 'stationproradio' ), $this->name ),
+			'menu_name'                  => sprintf( __( '%ss', 'stationproradio' ), $this->name ),
+			'add_new_item'               => sprintf( __( 'Add New %s', 'stationproradio' ), $this->name ),
+			'new_item_name'              => sprintf( __( 'New %s', 'stationproradio' ), $this->name ),
+			'all_items'                  => sprintf( __( 'All %ss', 'stationproradio' ), $this->name ),
+			'separate_items_with_commas' => sprintf( __( 'Separate %ss with comma', 'stationproradio' ), $this->name ),
+			'choose_from_most_used'      => sprintf( __( 'Choose from %ss most used', 'stationproradio' ), $this->name )
 		);
 
 		return array_merge( $default, $this->labels );

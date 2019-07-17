@@ -11,14 +11,14 @@ Tags: blog, one-column, two-columns, right-sidebar, custom-background, custom-he
 == Description ==
 The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background.
 
-For more information about Twenty Twelve please go to https://codex.wordpress.org/stationprotheme.
+For more information about Twenty Twelve please go to https://codex.wordpress.org/stationproradio.
 
 == Installation ==
 
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
 2. Type in Twenty Twelve in the search form and press the 'Enter' key in your keyboard.
 3. Click on the 'Activate' button to use your new theme right away.
-4. Go to https://codex.wordpress.org/stationprotheme for a guide to customize this theme.
+4. Go to https://codex.wordpress.org/stationproradio for a guide to customize this theme.
 5. Navigate to Appearance > Customize in your admin panel.
 
 == Copyright ==

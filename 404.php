@@ -12,11 +12,11 @@ get_header(); ?>
 	<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
 
 			<header class="page-header">
-				<h1 class="page-title"><?php _e( 'Not Found', 'stationprotheme' ); ?></h1>
+				<h1 class="page-title"><?php _e( 'Not Found', 'stationproradio' ); ?></h1>
 			</header>
 
 			<div class="page-content">
-				<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'stationprotheme' ); ?></p>
+				<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'stationproradio' ); ?></p>
 
 				<?php get_search_form(); ?>
 			</div><!-- .page-content -->

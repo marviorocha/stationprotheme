@@ -1,11 +1,11 @@
 <?php 
 
-// Include the stationprotheme_Theme_Options class.
+// Include the stationproradio_Theme_Options class.
 require_once get_template_directory() . '/core/classes/class-theme-options.php';
 
 $odin_theme_options = new Odin_Theme_Options(
     'theme-settings',  
-    __( 'Theme Settings', 'stationprotheme' ),  
+    __( 'Theme Settings', 'stationproradio' ),  
     'manage_options'  
 );
 
@@ -23,46 +23,46 @@ $odin_theme_options->set_tabs(
     array(
         array(
             'id' => 'odin_general', // ID da aba e nome da entrada no banco de dados.
-            'title' => __( 'Settings', 'stationprotheme' ), // Título da aba.
+            'title' => __( 'Settings', 'stationproradio' ), // Título da aba.
         ),
         array(
             'id' => 'home_section',
-            'title' => __( 'Section FrontPage', 'stationprotheme' )
+            'title' => __( 'Section FrontPage', 'stationproradio' )
         ),
         array(
             'id' => 'slider_home',
-            'title' => __( 'Slider and Brands', 'stationprotheme' )
+            'title' => __( 'Slider and Brands', 'stationproradio' )
         ),
         array(
             'id' => 'newsletter_form',
-            'title' => __( 'Newsletter form', 'stationprotheme' )
+            'title' => __( 'Newsletter form', 'stationproradio' )
         )
     )
 );
 
-// stationprotheme fields
+// stationproradio fields
 
 
 $odin_theme_options->set_fields(
     array(
         'general_section' => array(
             'tab'   => 'odin_general', // Sessão da aba odin_general
-            'title' => __( 'Settings Home Page', 'stationprotheme' ),
+            'title' => __( 'Settings Home Page', 'stationproradio' ),
             
             'fields' => array(
 
                 array(
                     'id' => 'title_home',
-                    'label' => __( 'Title Home:', 'stationprotheme' ),
+                    'label' => __( 'Title Home:', 'stationproradio' ),
                     'type' => 'text',
                     'default' => 'Posuere lorem Ipsum',
-                    'description' => __( 'Add the title ', 'stationprotheme' )
+                    'description' => __( 'Add the title ', 'stationproradio' )
                 ),
 
                 
                 array(
                     'id'          => 'description_home', // Obrigatório
-                    'label'       => __( 'Description and action', 'stationprotheme' ), // Obrigatório
+                    'label'       => __( 'Description and action', 'stationproradio' ), // Obrigatório
                     'type'        => 'editor', // Obrigatório
                     'default'     => '  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas esse eos, recusandae in incidunt fugiat nulla itaque,
                      <p>[button type="primary" size="lg" link="http://mypage.com" ]Download[/button]</p>', // Opcional
@@ -73,10 +73,10 @@ $odin_theme_options->set_fields(
                 ),
                 array(
                     'id'          => 'image_home', // Required
-                    'label'       => __( 'Image', 'stationprotheme' ), // Required
+                    'label'       => __( 'Image', 'stationproradio' ), // Required
                     'type'        => 'image', // Required
                     'default'     => '29',
-                    'description' => __( 'Upload home image banner home with 1900 by 775 pixels', 'stationprotheme' ) // Optional
+                    'description' => __( 'Upload home image banner home with 1900 by 775 pixels', 'stationproradio' ) // Optional
                 ),
 
             
@@ -87,13 +87,13 @@ $odin_theme_options->set_fields(
 
         'general_section_two' => array(
             'tab'   => 'odin_general', // Sessão da aba odin_general
-            'title' => __( 'Section home', 'stationprotheme' ),
+            'title' => __( 'Section home', 'stationproradio' ),
             
             'fields' => array(
 
                 array(
                     'id' => 'section_home',
-                    'label' => __( 'Section Action', 'stationprotheme' ),
+                    'label' => __( 'Section Action', 'stationproradio' ),
                     'type' => 'editor',
                     'default' => '<h2>Vivamus laoreet</h2>
                     <p> Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Porta non
@@ -105,7 +105,7 @@ $odin_theme_options->set_fields(
                         'media_buttons' => false
                     ),
 
-                    'description' => __( 'Session Home Action', 'stationprotheme' )
+                    'description' => __( 'Session Home Action', 'stationproradio' )
                 ),
 
                 )
@@ -115,13 +115,13 @@ $odin_theme_options->set_fields(
 
             'general_section_tree' => array(
                 'tab'   => 'odin_general', // Sessão da aba odin_general
-                'title' => __( 'Section Features', 'stationprotheme' ),
+                'title' => __( 'Section Features', 'stationproradio' ),
                 
                 'fields' => array(
 
                     array(
                         'id' => 'features_image',
-                        'label' => __( 'Features Images ', 'stationprotheme' ),
+                        'label' => __( 'Features Images ', 'stationproradio' ),
                         'type' => 'image',
                         'default' => '28'
                         
@@ -129,7 +129,7 @@ $odin_theme_options->set_fields(
     
                     array(
                         'id' => 'features',
-                        'label' => __( 'Section Spotlight', 'stationprotheme' ),
+                        'label' => __( 'Section Spotlight', 'stationproradio' ),
                         'type' => 'editor',
                         'default' => '<ul class="features"> <li>
                         <h3>Dui augue</h3>
@@ -151,7 +151,7 @@ $odin_theme_options->set_fields(
                             'media_buttons' => false
                         ),
     
-                        'description' => __( 'Class "features" is required for <ul class="features">', 'stationprotheme' )
+                        'description' => __( 'Class "features" is required for <ul class="features">', 'stationproradio' )
                     ),
     
                     )
@@ -163,14 +163,14 @@ $odin_theme_options->set_fields(
 
         'newsletter_add' => array(
             'tab'   => 'newsletter_form', // Sessão da aba odin_general
-            'title' => __( 'Newsletter', 'stationprotheme' ),
+            'title' => __( 'Newsletter', 'stationproradio' ),
             
             'fields' => array(
 
           
               array(
                     'id' => 'code_newsletter',
-                    'label' => __( 'Newsletter Form', 'stationprotheme' ),
+                    'label' => __( 'Newsletter Form', 'stationproradio' ),
                     'type' => 'textarea',
                     'default' => '        <div class="col-md-4">
                     <h4>Subscribe to newsletter</h4>
@@ -189,7 +189,7 @@ $odin_theme_options->set_fields(
                         'media_buttons' => false
                     ),
 
-                    'description' => __( 'Add newsletter form code for your templete', 'stationprotheme' )
+                    'description' => __( 'Add newsletter form code for your templete', 'stationproradio' )
                 ),
 
                 )
@@ -202,18 +202,18 @@ $odin_theme_options->set_fields(
 
        'section_container' => array(
             'tab'   => 'home_section',  
-            'title' => __( 'Section Icons and Text', 'stationprotheme' ),
+            'title' => __( 'Section Icons and Text', 'stationproradio' ),
             'fields' => array(
                 array(
                     'id' => 'title',
-                    'label' => __( 'Title Section', 'stationprotheme' ),
+                    'label' => __( 'Title Section', 'stationproradio' ),
                     'type' => 'text',
                     'default' => 'Vivamus laoreet',
                     
                 ),
                 array(
                     'id' => 'description',
-                    'label' => __( 'Description Section 1', 'stationprotheme' ),
+                    'label' => __( 'Description Section 1', 'stationproradio' ),
                     'default' => 'Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing.
                     Porta non pulvinar neque laoreet. Viverra ipsum nunc aliquet bibendum.',
                     'type' => 'editor',
@@ -233,18 +233,18 @@ $odin_theme_options->set_fields(
         //  Section Home One
         
         'home_section1' => array(
-            'tab'   => 'home_section', // Sessão da aba stationprotheme_adsense
-            'title' => __( 'Blocks Section One', 'stationprotheme' ),
+            'tab'   => 'home_section', // Sessão da aba stationproradio_adsense
+            'title' => __( 'Blocks Section One', 'stationproradio' ),
             'fields' => array(
                 array(
                     'id' => 'title_1',
-                    'label' => __( 'Title ', 'stationprotheme' ),
+                    'label' => __( 'Title ', 'stationproradio' ),
                     'type' => 'text',
                     'default' => 'Consectetur'
                 ),
                 array(
                     'id' => 'descricao_1',
-                    'label' => __( 'Description ', 'stationprotheme' ),
+                    'label' => __( 'Description ', 'stationproradio' ),
                     'type' => 'textarea',
                     'default' => 'Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Porta
                     non pulvinar neque laoreet. Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat lacus.
@@ -252,10 +252,10 @@ $odin_theme_options->set_fields(
                 ),
                 array(
                     'id' => 'icon_1',
-                    'label' => __( 'Icon ', 'stationprotheme' ),
+                    'label' => __( 'Icon ', 'stationproradio' ),
                     'type' => 'text',
                     'default' => 'comment-o',
-                    'description' => __( 'Use the font-awesome without the fa for icon ex: comment-0', 'stationprotheme' )
+                    'description' => __( 'Use the font-awesome without the fa for icon ex: comment-0', 'stationproradio' )
                 ),
                
             )
@@ -264,19 +264,19 @@ $odin_theme_options->set_fields(
 
         //  Section Hom Two
         'home_section2' => array(
-            'tab'   => 'home_section', // Sessão da aba stationprotheme_adsense
-            'title' => __( 'Blocks Section Two', 'stationprotheme' ),
+            'tab'   => 'home_section', // Sessão da aba stationproradio_adsense
+            'title' => __( 'Blocks Section Two', 'stationproradio' ),
             'fields' => array(
                 array(
                     'id' => 'title_2',
-                    'label' => __( 'Title ', 'stationprotheme' ),
+                    'label' => __( 'Title ', 'stationproradio' ),
                     'type' => 'text',
                     'default' => 'Malesuada'
                     
                 ),
                 array(
                     'id' => 'descricao_2',
-                    'label' => __( 'Description ', 'stationprotheme' ),
+                    'label' => __( 'Description ', 'stationproradio' ),
                     'type' => 'textarea',
                     'default' => 'Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Porta
                     non pulvinar neque laoreet. Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat lacus.
@@ -284,10 +284,10 @@ $odin_theme_options->set_fields(
                 ),
                 array(
                     'id' => 'icon_2',
-                    'label' => __( 'Icon ', 'stationprotheme' ),
+                    'label' => __( 'Icon ', 'stationproradio' ),
                     'type' => 'text',
                     'default' => 'heart-o',
-                    'description' => __( 'Use the font-awesome without the fa for icon ex: heart-o', 'stationprotheme' )
+                    'description' => __( 'Use the font-awesome without the fa for icon ex: heart-o', 'stationproradio' )
                 ),
                
             )
@@ -296,19 +296,19 @@ $odin_theme_options->set_fields(
         // Section Home 3
 
         'home_section3' => array(
-            'tab'   => 'home_section', // Sessão da aba stationprotheme_adsense
-            'title' => __( 'Blocks Section Tree', 'stationprotheme' ),
+            'tab'   => 'home_section', // Sessão da aba stationproradio_adsense
+            'title' => __( 'Blocks Section Tree', 'stationproradio' ),
             'fields' => array(
                 array(
                     'id' => 'title_3',
-                    'label' => __( 'Title ', 'stationprotheme' ),
+                    'label' => __( 'Title ', 'stationproradio' ),
                     'type' => 'text',
                     'default' => 'Phasellus'
                     
                 ),
                 array(
                     'id' => 'descricao_3',
-                    'label' => __( 'Description ', 'stationprotheme' ),
+                    'label' => __( 'Description ', 'stationproradio' ),
                     'type' => 'textarea',
                     'default' => 'Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Porta
                     non pulvinar neque laoreet. Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat lacus.
@@ -316,10 +316,10 @@ $odin_theme_options->set_fields(
                 ),
                 array(
                     'id' => 'icon_3',
-                    'label' => __( 'Icon ', 'stationprotheme' ),
+                    'label' => __( 'Icon ', 'stationproradio' ),
                     'type' => 'text',
                     'default' => 'bell-o',
-                    'description' => __( 'Use the font-awesome without the fa for icon ex: bell-o ', 'stationprotheme' )
+                    'description' => __( 'Use the font-awesome without the fa for icon ex: bell-o ', 'stationproradio' )
                 ),
             
             )
@@ -327,27 +327,27 @@ $odin_theme_options->set_fields(
 
 
         'slider' => array(
-            'tab'   => 'slider_home', // Sessão da aba stationprotheme_adsense
-            'title' => __( 'Slider Front Page', 'stationprotheme' ),
+            'tab'   => 'slider_home', // Sessão da aba stationproradio_adsense
+            'title' => __( 'Slider Front Page', 'stationproradio' ),
             'fields' => array(
  
                 array(
                     'id' => 'image1',
-                    'label' => __( 'Slider 1 ', 'stationprotheme' ),
+                    'label' => __( 'Slider 1 ', 'stationproradio' ),
                     'type' => 'image',
                     'default' => '26'
                     
                 ),
                 array(
                     'id' => 'image2',
-                    'label' => __( 'Slider 2', 'stationprotheme' ),
+                    'label' => __( 'Slider 2', 'stationproradio' ),
                     'type' => 'image',
                     'default' => '27'
                     
                 ),
                 array(
                     'id' => 'image3',
-                    'label' => __( 'Slider 3 ', 'stationprotheme' ),
+                    'label' => __( 'Slider 3 ', 'stationproradio' ),
                     'type' => 'image',
                     'default' => '28'
                     
@@ -358,13 +358,13 @@ $odin_theme_options->set_fields(
         ),
 
         'brands' => array(
-            'tab'   => 'slider_home', // Sessão da aba stationprotheme_adsense
-            'title' => __( 'Brands Front Page', 'stationprotheme' ),
+            'tab'   => 'slider_home', // Sessão da aba stationproradio_adsense
+            'title' => __( 'Brands Front Page', 'stationproradio' ),
             'fields' => array(
  
                 array(
                     'id' => 'brand',
-                    'label' => __( 'Brand 1 ', 'stationprotheme' ),
+                    'label' => __( 'Brand 1 ', 'stationproradio' ),
                     'type' => 'image_plupload',
                     'default' => '26'
                     

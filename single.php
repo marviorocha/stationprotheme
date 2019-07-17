@@ -29,7 +29,7 @@ get_header(); ?>
 				 <?php echo get_the_author_meta(get_the_author_meta( 'ID' )) ?></span>
 				 <?php if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) : ?>
 				<span class="comments-link">  <i class='fa fa-comment'></i> 
-				<?php comments_popup_link( __( 'Leave a comment', 'stationprotheme' ), __( '1 Comment', 'stationprotheme' ), __( '% Comments', 'stationprotheme' ) ); ?></span>
+				<?php comments_popup_link( __( 'Leave a comment', 'stationproradio' ), __( '1 Comment', 'stationproradio' ), __( '% Comments', 'stationproradio' ) ); ?></span>
 				<?php endif; ?>
 				 </span>
             </div>

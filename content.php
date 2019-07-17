@@ -48,9 +48,9 @@
 		
 
 			<?php
-				the_content( __( 'Continue reading <span class="btn btn-primary meta-nav">&rarr;</span>', 'stationprotheme' ) );
+				the_content( __( 'Continue reading <span class="btn btn-primary meta-nav">&rarr;</span>', 'stationproradio' ) );
 				wp_link_pages( array(
-					'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'stationprotheme' ) . '</span>',
+					'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'stationproradio' ) . '</span>',
 					'after'       => '</div>',
 					'link_before' => '<span>',
 					'link_after'  => '</span>',
@@ -61,11 +61,11 @@
 
 	<footer class="entry-meta">
 		<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) ) : ?>
-			<span class="cat-links"><?php echo __( 'Posted in:', 'stationprotheme' ) . ' ' . get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'stationprotheme' ) ); ?></span>
+			<span class="cat-links"><?php echo __( 'Posted in:', 'stationproradio' ) . ' ' . get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'stationproradio' ) ); ?></span>
 		<?php endif; ?>
-		<?php the_tags( '<span class="tag-links">' . __( 'Tagged as:', 'stationprotheme' ) . ' ', ', ', '</span>' ); ?>
+		<?php the_tags( '<span class="tag-links">' . __( 'Tagged as:', 'stationproradio' ) . ' ', ', ', '</span>' ); ?>
 		<?php if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) : ?>
-			<span class="comments-link"> | <i class='fa fa-comment'></i> <?php comments_popup_link( __( 'Leave a comment', 'stationprotheme' ), __( '1 Comment', 'stationprotheme' ), __( '% Comments', 'stationprotheme' ) ); ?></span>
+			<span class="comments-link"> | <i class='fa fa-comment'></i> <?php comments_popup_link( __( 'Leave a comment', 'stationproradio' ), __( '1 Comment', 'stationproradio' ), __( '% Comments', 'stationproradio' ) ); ?></span>
 		<?php endif; ?>
 	</footer>
 </article><!-- #post-## -->

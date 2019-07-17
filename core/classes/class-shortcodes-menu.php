@@ -55,7 +55,7 @@ class Odin_Shortcodes_Menu {
 	 * @return array
 	 */
 	public function register_shortcode_button( $buttons ) {
-		array_push( $buttons, '|', 'stationprotheme' );
+		array_push( $buttons, '|', 'stationproradio' );
 
 		return $buttons;
 	}

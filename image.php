@@ -22,7 +22,7 @@ get_header(); ?>
 						<div class="entry-meta entry-content">
 							<?php
 								$metadata = wp_get_attachment_metadata();
-								printf( __( 'Image total size: %s pixels', 'stationprotheme' ), sprintf( '<a href="%1$s" title="%2$s"><span>%3$s</span> &times; <span>%4$s</span></a>', wp_get_attachment_url(), esc_attr( __( 'Full image link', 'stationprotheme' ) ), $metadata['width'], $metadata['height'] ) );
+								printf( __( 'Image total size: %s pixels', 'stationproradio' ), sprintf( '<a href="%1$s" title="%2$s"><span>%3$s</span> &times; <span>%4$s</span></a>', wp_get_attachment_url(), esc_attr( __( 'Full image link', 'stationproradio' ) ), $metadata['width'], $metadata['height'] ) );
 							?>
 						</div><!-- .entry-meta -->
 					</header><!-- .entry-header -->
@@ -33,13 +33,13 @@ get_header(); ?>
 						<?php the_content(); ?>
 
 						<ul class="pager">
-							<li class="previous"><?php previous_image_link( false, __( '&larr; Previous image', 'stationprotheme' ) ); ?></li>
-							<li class="next"><?php next_image_link( false, __( 'Next image &rarr;', 'stationprotheme' ) ); ?></li>
+							<li class="previous"><?php previous_image_link( false, __( '&larr; Previous image', 'stationproradio' ) ); ?></li>
+							<li class="next"><?php next_image_link( false, __( 'Next image &rarr;', 'stationproradio' ) ); ?></li>
 						</ul><!-- .pager -->
 
 						<?php if ( ! empty( $post->post_parent ) ) : ?>
 							<ul class="pager page-title">
-								<li class="previous"><a href="<?php echo esc_url( get_permalink( $post->post_parent ) ); ?>" title="<?php echo esc_attr( sprintf( __( 'Back to %s', 'stationprotheme' ), strip_tags( get_the_title( $post->post_parent ) ) ) ); ?>" rel="gallery"><?php printf( __( '<span class="meta-nav">&larr;</span> %s', 'stationprotheme' ), get_the_title( $post->post_parent ) ); ?></a></li>
+								<li class="previous"><a href="<?php echo esc_url( get_permalink( $post->post_parent ) ); ?>" title="<?php echo esc_attr( sprintf( __( 'Back to %s', 'stationproradio' ), strip_tags( get_the_title( $post->post_parent ) ) ) ); ?>" rel="gallery"><?php printf( __( '<span class="meta-nav">&larr;</span> %s', 'stationproradio' ), get_the_title( $post->post_parent ) ); ?></a></li>
 							</ul><!-- .pager -->
 						<?php endif; ?>
 					</div><!-- .entry-content -->

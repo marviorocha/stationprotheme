@@ -1,6 +1,6 @@
 # Station Pro - Theme  
 
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
+![](https://travis-ci.org/marviorocha/stationprotheme.svg?branch=master) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
 ### Theme Station Pro for Radio 
 
@@ -9,7 +9,7 @@ This is a free theme for Wordpress where we use with Station Pro Plugin, Icecast
 
 # Screenshot
 
-![](https://raw.githubusercontent.com/marviorocha/stationprotheme/master/screenshot.png)
+![](https://raw.githubusercontent.com/marviorocha/stationproradio/master/screenshot.png)
 
 
 

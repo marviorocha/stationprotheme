@@ -29,6 +29,7 @@ require_once get_template_directory() . '/core/classes/class-shortcodes.php';
 require_once get_template_directory() . '/core/classes/class-shortcodes-menu.php';
 require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.php';
 require_once get_template_directory() . '/inc/station-theme.php';
+require_once get_template_directory() . '/activation/activate.php';
 // require_once get_template_directory() . '/core/classes/class-options-helper.php';
  // require_once get_template_directory() . '/core/classes/class-post-type.php';
 // require_once get_template_directory() . '/core/classes/class-taxonomy.php';
@@ -59,14 +60,14 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 		/**
 		 * Add support for multiple languages.
 		 */
-		load_theme_textdomain( 'stationprotheme', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'stationproradio', get_template_directory() . '/languages' );
 
 		/**
 		 * Register nav menus.
 		 */
 		register_nav_menus(
 			array(
-				'main-menu' => __( 'Main Menu', 'stationprotheme' )
+				'main-menu' => __( 'Main Menu', 'stationproradio' )
 			)
 		);
 
@@ -170,7 +171,7 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 		/*
 		 * Enable support for custom logo.
 		 *
-		 *  @since stationprotheme 2.2.10
+		 *  @since stationproradio 2.2.10
 		 */
 		add_theme_support( 'custom-logo', array(
 			'height'      => 240,
@@ -195,9 +196,9 @@ add_action( 'after_setup_theme', 'odin_setup_features' );
 function odin_widgets_init() {
 	register_sidebar(
 		array(
-			'name' => __( 'Main Sidebar', 'stationprotheme' ),
+			'name' => __( 'Main Sidebar', 'stationproradio' ),
 			'id' => 'main-sidebar',
-			'description' => __( 'Site Main Sidebar', 'stationprotheme' ),
+			'description' => __( 'Site Main Sidebar', 'stationproradio' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s nav nav-pills nav-stacked"> ',
 			'after_widget' => '</aside>',
 			'before_title' => '<h4 class="widgettitle widget-title">',
@@ -214,9 +215,9 @@ function odin_footer_widgets_init(){
 register_sidebar(array(
 
  
-		'name' => __( 'Footer', 'stationprotheme' ),
+		'name' => __( 'Footer', 'stationproradio' ),
 		'id' => 'footer-sidebar',
-		'description' => __( 'Sidebar Footer', 'stationprotheme' ),
+		'description' => __( 'Sidebar Footer', 'stationproradio' ),
 		'before_widget' => '<div  id="%1$s" class="col-md-4 widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle widget-title">',
