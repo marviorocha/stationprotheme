@@ -9,9 +9,9 @@
         <title>Modelo - Layout</title>
 </head>
 
-<body class="flex flex-col font-sans bg-gray-300">
+<body class="w-full flex flex-col font-sans bg-gray-300">
 
-        <header class="h-auto bg-purple-700 bg-cover bg-center text-white"
+        <header class="h-auto bg-purple-700 bg-cover bg-center w-full text-white"
                 style="background-image: url(images/Cover.png)">
 
 
@@ -31,7 +31,7 @@
                                 <h1 class="font-heading font-bold text-lg">Tailwind CSS</h1>
                         </div>
 
-                        <div class="font-semibold hidden md:visible uppercase">
+                        <div class="font-semibold visible sm:invisible md:visible uppercase">
                         <a class="mx-2 hover:bg-purple-600 py-2 px-3 transition duration-500 rounded-sm" href="">Home</a>
                         <a class="mx-2 hover:bg-purple-600 py-2 px-3 transition duration-500 rounded-sm" href="">Price</a>
                         <a class="mx-2 hover:bg-purple-600 py-2 px-3 transition duration-500 rounded-sm" href="">Login</a>
@@ -96,9 +96,9 @@
                 <h1 class="text-3xl font-bold text-gray-700 text-center">Lorem ipsum dolor sit amet consectetur.</h1>
                 <h2 class="text-1xl font-semibold text-gray-700 text-center">Lorem ipsum dolor sit.</h2>
 
-                <div class="flex flex-col md:flex-row md:items-start justify-between w-11/12 my-12 sm:mx-32 items-center">
+                <div class="flex flex-col md:flex-row md:items-start justify-between p-6 my-12 sm:mx-32 items-center">
 
-        <div class="text-1xl font-semibold my-8 w-1/2">
+        <div class="text-1xl font-semibold my-8 ">
 <div class="pb-8 border-b-2 border-purple-100 md:border-none">
     <h2 class="mb-5 font-heading leading-tight text-purple-700 text-3xl">Our Quote Process</h2> <div class="mb-3"><h3 class="mb-2 font-heading leading-tight text-blue-500 text-xl">1 <span class="text-blue-300">—</span> Arrange an appointment</h3> <p>Get in touch and we will arrange a date and time to discuss your requirements.</p></div> <div class="mb-3"><h3 class="mb-2 font-heading leading-tight text-blue-500 text-xl">2 <span class="text-blue-300">—</span> Works inspection</h3> <p>We arrive on-time at the arranged date and take a detailed look at the necessary works to provide you with an accurate quote.</p></div> <div class="mb-5"><h3 class="mb-2 font-heading leading-tight text-blue-500 text-xl">3 <span class="text-blue-300">—</span> Receive your quote!</h3> <p>We'll provide you with a full no-obligation quote within 2 days.</p></div> <div class="py-5 px-6 bg-purple-100 rounded-lg"><p><strong class="text-purple-500">It's that simple!</strong> Provide us with your details using this request a quote form or give us a call to arrange your inspection.</p></div></div>
 
@@ -139,11 +139,11 @@
 <!-- end session two -->
 
 <!-- session three -->
-<div class="bg-purple-800 w-full h-32 flex  justify-center items-center text-white text-lg">
+<div class="bg-purple-800 w-full  h-32 flex  justify-center  items-center text-white text-lg">
         <form class="" action="">
-                <input required="email" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-2 text-gray-700
+                <input required="email" class="bg-gray-200   appearance-none border-2 border-gray-200 rounded py-2 px-2 text-gray-700
                 leading-tight focus:outline-none focus:bg-white " type="text" placeholder="subscriber for get updates">
-                <button class="bg-blue-600  px-2 text-sm py-3 shadow rounded-md hover:bg-blue-700 transition duration-400 outline-none
+                <button class="bg-blue-600  px-1 md:px-2 text-xs py-3 shadow rounded-md hover:bg-blue-700 transition duration-400 outline-none
                 my-8 uppercase" >Subscriber</button>
         </form>
 </div>
@@ -177,7 +177,7 @@
 
    <div class="flex  flex-wrap my-8 mx-16 ">
 
-        <form class="flex flex-col justify-start md:w-1/2 pr-5 pb-8"  action="">
+        <form class="flex flex-col justify-start md:w-1/2 pr-5"  action="">
                 <label for="name" class="text-gray-200 font-semibold">Name:</label>
 
                 <input required name="name" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded py-2 px-2 m-1 text-gray-700
@@ -190,6 +190,8 @@
                <label for="subject" class="t-gray-200 font-semibold">Subject:</label>
                 <textarea rows="10" cols="22" name="subject" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded  h-32 py-2 px-2 m-1 text-gray-700
                 leading-tight focus:outline-none focus:bg-white focus:border-gray-200" placeholder="Write your subject here..."> </textarea>
+                <button type="submit" class="bg-blue-600  font-semibold px-12 text-ms py-3 shadow border-b-2 border-blue-800  rounded-md hover:bg-blue-700 transition duration-400 outline-none
+                my-2 uppercase"  >Submit</button>
         </form>
 
 
@@ -200,8 +202,8 @@
    </div>
 
    <footer class="text-center w-full h-8">
-           <div class="">
-                   © All reserved by Marvio Rocha
+           <div class="font-bolder-600">
+                   © 2020 All reserved by Marvio Rocha
            </div>
    </footer>
 </div>
